@@ -1,0 +1,57 @@
+@media screen and (min-width: 850px) {
+  .hero-fullName {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-fullName img {
+    background: #7843e9;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    display: block;
+  }
+
+  .hero-fullName,
+  .hero-fullName span {
+    color: #333;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .hero-fullName {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-fullName img {
+    background: #7843e9;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    display: block;
+  }
+
+  .hero-fullName,
+  .hero-fullName span {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #333;
+  }
+}
