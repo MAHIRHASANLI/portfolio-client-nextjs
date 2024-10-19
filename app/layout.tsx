@@ -32,8 +32,6 @@ export const metadata: Metadata = {
       "I am a software engineer, developing web applications. Feel free to get in touch with me by mailing hasanlimahir1@gmail.com",
     card: "summary_large_image", // Twitter kartı üçün geniş şəkil
   },
-  themeColor: "#000000",
-  viewport: "width=device-width, initial-scale=1", // Responsive dizayn
   applicationName: "Mahir.dev", // Tətbiq adı
 };
 

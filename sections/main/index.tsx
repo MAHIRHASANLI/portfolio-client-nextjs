@@ -13,7 +13,7 @@ interface MainDataItem {
 }
 
 const getData = async (): Promise<MainDataItem[]> => {
-  const res = await fetch("https://myportfolio-server-d8f7.onrender.com/home");
+  const res = await fetch(`${process.env.BASE_URL}/home`);
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
@@ -28,13 +28,14 @@ const MainSection = async () => {
     mainData.map((item) => {
       return (
         <section
+          className="container"
           id="home"
           key={item._id}
           style={{
             background: `linear-gradient(to right,rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)),url(${item.image})`,
           }}
         >
-          <div className={styles.container}>
+          <div className={`${styles.container} fluid`}>
             <h1 className={styles.name}>
               <span>Hello, I'm&nbsp;{item.name}</span>&nbsp;
               <span id="color">{item.surname}</span>

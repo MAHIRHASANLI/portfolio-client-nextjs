@@ -1,0 +1,313 @@
+@media only screen and (min-width: 1599px) {
+  .lightbox_img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    border-radius: 15px;
+  }
+
+  .lightbox_img img {
+    object-fit: cover;
+    transition: all 0.3s linear;
+    border-radius: 15px;
+  }
+
+  .lightbox_img::after {
+    content: "";
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    transition: 0.5s all ease;
+  }
+
+  .lightbox_img:hover::after,
+  .lightbox_img:focus::after,
+  .lightbox_img:active::after {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .popup_media {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+  }
+
+  .popup_media span {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 50px;
+    font-weight: bolder;
+    z-index: 100000;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .popup_media img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    border: 3px solid black;
+    cursor: zoom-in;
+  }
+
+  .lightbox_img span {
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    transition: 0.5s all ease;
+    opacity: 0;
+    visibility: hidden;
+    color: white;
+    cursor: pointer;
+    line-height: 52px;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 0;
+  }
+
+  .lightbox_img:hover span {
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1599px) {
+  .lightbox_img {
+    position: relative;
+    height: 100%;
+    width: 90%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    border-radius: 15px;
+  }
+
+  .lightbox_img img {
+    object-fit: cover;
+    transition: all 0.3s linear;
+    border-radius: 15px;
+  }
+
+  .lightbox_img::after {
+    content: "";
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    transition: 0.5s all ease;
+  }
+
+  .lightbox_img:hover::after,
+  .lightbox_img:focus::after,
+  .lightbox_img:active::after {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .popup_media {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+  }
+
+  .popup_media span {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 50px;
+    font-weight: bolder;
+    z-index: 100000;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .popup_media img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    border: 3px solid black;
+    cursor: zoom-in;
+  }
+
+  .lightbox_img span {
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    transition: 0.5s all ease;
+    opacity: 0;
+    visibility: hidden;
+    color: white;
+    cursor: pointer;
+    line-height: 52px;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 0;
+  }
+
+  .lightbox_img:hover span {
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 950px) {
+  .lightbox_img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    border-radius: 12px;
+  }
+
+  .lightbox_img img {
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+    transition: all 0.3s linear;
+  }
+
+  .lightbox_img::after {
+    content: "";
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    transition: 0.5s all ease;
+  }
+
+  .lightbox_img:hover::after,
+  .lightbox_img:focus::after,
+  .lightbox_img:active::after {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .popup_media {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+  }
+
+  .popup_media span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 50px;
+    font-weight: bolder;
+    z-index: 100000;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .popup_media img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    border: 3px solid black;
+    cursor: zoom-in;
+  }
+
+  .lightbox_img span {
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    transition: 0.5s all ease;
+    opacity: 0;
+    visibility: hidden;
+    color: white;
+    cursor: pointer;
+    line-height: 52px;
+    font-size: 36px;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 0;
+  }
+
+  .lightbox_img:hover span {
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+  }
+}
