@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
+import SectionTitle from "@/components/user_section_title";
 type Props = {
   name: string;
   profession: string;
@@ -8,7 +9,7 @@ type Props = {
 const ProfileSummaryComponent: React.FC<Props> = ({ name, profession }) => {
   return (
     <div className={styles["profile-summary"]}>
-      <h3 className={styles.title}>{name}</h3>
+      <SectionTitle>{name}</SectionTitle>
       <p className={styles.description}>{profession}</p>
     </div>
   );

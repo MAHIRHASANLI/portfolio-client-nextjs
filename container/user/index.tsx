@@ -1,16 +1,16 @@
 import React from "react";
-import Header from "@/sections/header";
 import MainSection from "@/sections/main";
 import AboutSection from "@/sections/about";
+import ServicesSection from "@/sections/services";
 
 // type Props = {}
 
 const UserContainer: React.FC = () => {
   return (
     <React.Fragment>
-      <Header />
       <MainSection />
       <AboutSection />
+      <ServicesSection />
     </React.Fragment>
   );
 };

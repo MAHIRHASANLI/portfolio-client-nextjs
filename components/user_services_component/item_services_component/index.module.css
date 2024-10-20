@@ -1,0 +1,237 @@
+.service i {
+  color: #241e38;
+}
+.service h3 span,
+.service p span {
+  color: white;
+  transition: all 0.5s ease-out;
+}
+.service svg:hover,
+.service h3 span:hover,
+.service p span:hover {
+  color: #7843e9;
+}
+
+.service svg {
+  transition: all 0.5s ease-out;
+}
+
+@media only screen and (min-width: 1599px) {
+  .service {
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+    background-color: rgb(230, 230, 230);
+    padding: 30px 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+  }
+
+  .service:hover {
+    transform: translateY(-10px);
+  }
+
+  .icon {
+    font-size: 48px;
+  }
+
+  .service-title {
+    font-size: 28px;
+    color: #333 !important;
+    font-weight: 600;
+  }
+
+  .service-description {
+    font-size: 18px;
+    color: #333;
+  }
+
+  .service:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .service-link {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    transition: all 0.5s ease-out;
+    font-size: 20px;
+  }
+
+  .service-link::after {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 7px;
+    border-radius: 10px;
+    left: 0;
+    bottom: -55px;
+    background: #7843e9;
+    transition: all 0.3s ease-out;
+  }
+
+  .service:hover .service-link::after {
+    bottom: -15px;
+  }
+
+  .service:hover .service-link {
+    gap: 35px;
+    color: #7843e9;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1599px) {
+  .service {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+    background-color: rgb(230, 230, 230);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+  }
+
+  .service:hover {
+    transform: translateY(-10px);
+  }
+
+  .icon {
+    font-size: 42px;
+  }
+
+  .service-title {
+    font-size: 22px;
+    color: #333 !important;
+    font-weight: 500;
+  }
+
+  .service-description {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .service:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .service-link {
+    position: relative;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    transition: all 0.5s ease-out;
+    font-size: 15px;
+  }
+
+  .service-link::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 4px;
+    border-radius: 10px;
+    left: 0;
+    bottom: -43px;
+    background: #7843e9;
+    transition: all 0.3s ease-out;
+  }
+
+  .service:hover .service-link::after {
+    bottom: -10px;
+  }
+
+  .service:hover .service-link {
+    gap: 15px;
+    color: #7843e9;
+  }
+}
+
+/* ! Serverice margin yazdim, alt-alta yapismasin */
+@media only screen and (max-width: 1130px) {
+  .service:nth-child(1),
+  .service:nth-child(2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 950px) {
+  .service {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+    background-color: rgb(230, 230, 230);
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+  }
+
+  .service:nth-child(1),
+  .service:nth-child(2) {
+    margin-bottom: 25px;
+  }
+
+  .service:hover {
+    transform: translateY(-5px);
+  }
+
+  .icon {
+    font-size: 32px;
+  }
+
+  .service-title {
+    font-size: 20px;
+    color: #333 !important;
+    font-weight: 500;
+  }
+
+  .service-description {
+    font-size: 12px;
+    color: #333;
+  }
+
+  .service:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .service-link {
+    position: relative;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    transition: all 0.5s ease-out;
+    font-size: 14px;
+  }
+
+  .service-link::after {
+    position: absolute;
+    content: "";
+    width: 65px;
+    height: 3px;
+    border-radius: 10px;
+    left: 0;
+    bottom: -25px;
+    background: #7843e9;
+    transition: all 0.3s ease-out;
+  }
+
+  .service:hover .service-link::after {
+    bottom: -8px;
+  }
+
+  .service:hover .service-link {
+    gap: 5px;
+    color: #7843e9;
+  }
+}

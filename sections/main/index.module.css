@@ -6,13 +6,13 @@
 }
 @media screen and (min-width: 1599px) {
   .container {
-    width: 80%;
+    width: 85%;
     text-align: center;
     padding-bottom: 50px;
   }
 
   .name {
-    font-size: 80px;
+    font-size: 72px;
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
@@ -21,11 +21,13 @@
   }
 
   .profession {
+    padding-top: 40px;
+    padding-bottom: 30px;
     color: #333;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     line-height: 1.6;
-    width: 60%;
+    width: 80%;
     margin: auto;
   }
 }
@@ -47,6 +49,7 @@
   }
 
   .profession {
+    padding: 25px 0;
     color: #333;
     font-size: 22px;
     text-align: center;
@@ -58,7 +61,7 @@
 
 @media only screen and (min-width: 600px) and (max-width: 950px) {
   .container {
-    width: 80%;
+    /* width: 80%; */
     text-align: center;
     padding-bottom: 50px;
   }
@@ -73,6 +76,7 @@
   }
 
   .profession {
+    padding: 20px 0;
     color: #333;
     font-size: 20px;
     text-align: center;
@@ -84,12 +88,13 @@
 
 @media only screen and (min-width: 0px) and (max-width: 600px) {
   .container {
-    width: 85%;
+    /* width: 85%; */
     text-align: center;
     padding-bottom: 20px;
   }
 
   .name {
+    padding: 15px 0;
     font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 3px;

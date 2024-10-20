@@ -4,8 +4,9 @@ import { CiFacebook } from "react-icons/ci";
 import { CiLinkedin } from "react-icons/ci";
 import style from "./index.module.css";
 import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
+import { VscGithubAlt } from "react-icons/vsc";
+
 interface SocialType {
   _id: string;
   email: string;
@@ -46,7 +47,7 @@ const SocialIcons: React.FC = async () => {
               rel="noopener noreferrer"
               title="GitHub"
             >
-              <FaGithub style={{ fontSize: "30px" }} />
+              <VscGithubAlt style={{ fontSize: "30px" }} />
             </Link>
             <Link
               href={item.linkedn}

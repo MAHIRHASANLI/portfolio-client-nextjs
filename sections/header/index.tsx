@@ -6,7 +6,7 @@ import styles from "./index.module.css";
 
 const Header: React.FC = () => {
   return (
-    <header className={styles.header} style={{ zIndex: "99" }}>
+    <header className={`${styles.header}`} style={{ zIndex: "99" }}>
       <nav className={styles.navHeaders} style={{ zIndex: "99" }}>
         {/* Avatar-UserBadge */}
         <USerBadge />

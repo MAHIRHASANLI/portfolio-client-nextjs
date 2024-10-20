@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./index.module.css";
 import Button from "@/components/buttons/button";
 import SocialIcons from "@/components/social_icons";
+import AnimeBtn from "@/components/user_main_section/main_arrow_animation";
 // Gələn məlumatın strukturunu müəyyən etmək üçün interfeys
 interface MainDataItem {
   _id: string;
@@ -28,14 +29,14 @@ const MainSection = async () => {
     mainData.map((item) => {
       return (
         <section
-          className="container"
+          className="fluid"
           id="home"
           key={item._id}
           style={{
             background: `linear-gradient(to right,rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)),url(${item.image})`,
           }}
         >
-          <div className={`${styles.container} fluid`}>
+          <div className={styles.container}>
             <h1 className={styles.name}>
               <span>Hello, I'm&nbsp;{item.name}</span>&nbsp;
               <span id="color">{item.surname}</span>
@@ -44,6 +45,9 @@ const MainSection = async () => {
             <Link href="#contact">
               <Button>Contact me</Button>
             </Link>
+
+            {/*! Animasiyali ARROW ->*/}
+            <AnimeBtn />
           </div>
           <SocialIcons />
         </section>

@@ -36,7 +36,7 @@
     cursor: pointer;
     transition: all 0.4s linear;
     padding: 15px 70px;
-    margin-top: 50px;
+    /* margin-top: 30px; */
     font-size: 20px;
   }
   .button:hover {
@@ -59,7 +59,7 @@
     cursor: pointer;
     transition: all 0.4s linear;
     padding: 12px 65px;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 20px;
   }
   .button:hover {
@@ -82,7 +82,7 @@
     cursor: pointer;
     transition: all 0.4s linear;
     padding: 15px 60px;
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 18px;
   }
   .button:hover {

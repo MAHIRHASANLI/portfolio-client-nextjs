@@ -1,4 +1,8 @@
 @media only screen and (min-width: 1599px) {
+  .wrapper-title {
+    margin-bottom: 120px;
+  }
+
   .title {
     font-size: 70px;
     position: relative;
@@ -14,16 +18,15 @@
     border-radius: 3px;
     background: #7843e9;
   }
-  .description {
-    font-size: 20px;
-    color: inherit;
-    line-height: normal;
-    color: #333;
-  }
 }
 
 @media only screen and (min-width: 950px) and (max-width: 1599px) {
+  .wrapper-title {
+    margin-bottom: 80px;
+  }
+
   .title {
+    margin: 0;
     font-size: 40px;
     position: relative;
     font-weight: 500;
@@ -38,15 +41,13 @@
     border-radius: 3px;
     background: #7843e9;
   }
-  .description {
-    font-size: 16px;
-    color: inherit;
-    line-height: normal;
-    color: #333;
-  }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 950px) {
+  .wrapper-title {
+    margin-bottom: 50px;
+  }
+
   .title {
     font-size: 34px;
     position: relative;
@@ -61,12 +62,5 @@
     height: 5px;
     border-radius: 3px;
     background: #7843e9;
-  }
-
-  .description {
-    font-size: 12px;
-    color: inherit;
-    line-height: normal;
-    color: #333;
   }
 }

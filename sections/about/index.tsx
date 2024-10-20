@@ -11,16 +11,16 @@ interface AboutDataFetchingType {
   image: string;
 }
 
-const getData = async (): Promise<AboutDataFetchingType[]> => {
+export const getDataAbout = async (): Promise<AboutDataFetchingType[]> => {
   const res = await fetch(`${process.env.BASE_URL}/about`);
   return res.json();
 };
 
 const AboutSection: React.FC = async () => {
-  const [{ name, profession, image }] = await getData();
+  const [{ name, profession, image }] = await getDataAbout();
 
   return (
-    <section id="skills" className={`${styles.scilss} container`}>
+    <section id="about" className={`${styles.scilss}`}>
       <div className={styles["grid-container"]}>
         <div className={styles["grid-item-left"]}>
           <ImageComponent imgURL={image} name={name} />

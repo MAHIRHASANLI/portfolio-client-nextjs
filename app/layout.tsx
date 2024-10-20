@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat, Poppins } from "next/font/google";
 import "../styles/reset.css";
 import "../styles/global.css";
+import Header from "@/sections/header";
 
 export const metadata: Metadata = {
   title: "Mahir :: Web Developer",
@@ -47,7 +48,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={`${poppins.className}`}>
+        <Header />
+        <main className="container">{children}</main>
+      </body>
     </html>
   );
 }

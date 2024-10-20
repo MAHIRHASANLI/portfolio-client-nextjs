@@ -2,16 +2,18 @@ import Link from "next/link";
 import React from "react";
 import styles from "./index.module.css";
 import Image from "next/image";
+import { getDataAbout } from "@/sections/about";
 type Props = {};
 
-const USerBadge = (props: Props) => {
+const USerBadge: React.FC = async (props: Props) => {
+  const [{ name, image }] = await getDataAbout();
   return (
     <Link href="https://mahirhasanli.vercel.app/">
       <div className={styles["hero-fullName"]} key="">
         <Image
           className={styles.img}
-          src="https://picsum.photos/400/200"
-          alt=""
+          src={image}
+          alt={name}
           width={50}
           height={50}
         />

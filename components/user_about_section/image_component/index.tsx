@@ -8,7 +8,7 @@ type Props = {
   name: string;
 };
 
-const ImageComponent: React.FC<Props> = ({ imgURL, name }) => {
+const ImageComponent: React.FC<Props> = ({ imgURL = "", name = "" }) => {
   return (
     <div className={styles.lightbox_img}>
       <Image src={imgURL} alt={name} title="Mahir Hasanli" fill />
