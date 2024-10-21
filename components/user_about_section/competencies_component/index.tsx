@@ -82,7 +82,13 @@ const CompetenciesComponent: React.FC = () => {
           competenciesData.map(({ name, about, image, _id }) => (
             <div className={style["scilss-item"]} key={_id}>
               <div className={style.img}>
-                <Image src={image} alt={name} title={name} fill />
+                <Image
+                  src={image}
+                  alt={name}
+                  title={name}
+                  fill
+                  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
               </div>
               <div>
                 <i>{about}</i>

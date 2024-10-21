@@ -17,8 +17,8 @@ const ServicesSection: React.FC = async () => {
   const servicesData = await getData();
 
   return (
-    <section id="services" className={styles.services}>
-      <div>
+    <section id="services">
+      <div className={styles.services}>
         <SectionTitle>My Services</SectionTitle>
         <div className={styles.wrapper}>
           {servicesData &&

@@ -20,14 +20,16 @@ const AboutSection: React.FC = async () => {
   const [{ name, profession, image }] = await getDataAbout();
 
   return (
-    <section id="about" className={`${styles.scilss}`}>
-      <div className={styles["grid-container"]}>
-        <div className={styles["grid-item-left"]}>
-          <ImageComponent imgURL={image} name={name} />
-        </div>
-        <div className={styles["grid-item-right"]}>
-          <ProfileSummaryComponent name={name} profession={profession} />
-          <CompetenciesComponent />
+    <section id="about">
+      <div className={styles.scilss}>
+        <div className={styles["grid-container"]}>
+          <div className={styles["grid-item-left"]}>
+            <ImageComponent imgURL={image} name={name} />
+          </div>
+          <div className={styles["grid-item-right"]}>
+            <ProfileSummaryComponent name={name} profession={profession} />
+            <CompetenciesComponent />
+          </div>
         </div>
       </div>
     </section>

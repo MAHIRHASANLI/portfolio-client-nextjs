@@ -4,8 +4,8 @@ import { CiFacebook } from "react-icons/ci";
 import { CiLinkedin } from "react-icons/ci";
 import style from "./index.module.css";
 import Link from "next/link";
-import { CgMail } from "react-icons/cg";
 import { VscGithubAlt } from "react-icons/vsc";
+import { AiOutlineMail } from "react-icons/ai";
 
 interface SocialType {
   _id: string;
@@ -39,7 +39,7 @@ const SocialIcons: React.FC = async () => {
               rel="noopener noreferrer"
               title="Email"
             >
-              <CgMail style={{ fontSize: "30px" }} />
+              <AiOutlineMail style={{ fontSize: "30px" }} />
             </Link>
             <Link
               href={item.github}
