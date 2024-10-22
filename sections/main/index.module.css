@@ -1,113 +1,157 @@
-.loadingFillingBottle {
+/* .loadingFillingBottle {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 @media screen and (min-width: 1599px) {
-  .container {
-    width: 85%;
+  .main-content {
     text-align: center;
-    padding-bottom: 50px;
+    padding-top: 270px;
+    padding-bottom: 210px;
   }
 
-  .name {
-    font-size: 72px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: center;
-    color: #111;
-    font-weight: 800;
-  }
-
-  .profession {
-    padding-top: 40px;
-    padding-bottom: 30px;
-    color: #333;
-    font-size: 40px;
-    text-align: center;
-    line-height: 1.6;
-    width: 80%;
-    margin: auto;
-  }
-}
-
-@media only screen and (min-width: 950px) and (max-width: 1599px) {
-  .container {
-    width: 80%;
-    text-align: center;
-    padding-bottom: 50px;
-  }
-
-  .name {
+  .content-name h1 {
     font-size: 60px;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: center;
+    letter-spacing: 4px;
     color: #111;
     font-weight: 800;
   }
-
-  .profession {
-    padding: 25px 0;
+  .content-profession {
+    margin-top: 20px;
+  }
+  .content-profession p {
     color: #333;
-    font-size: 22px;
-    text-align: center;
+    font-size: 24px;
     line-height: 1.6;
-    width: 60%;
-    margin: auto;
+  }
+
+  .button {
+    margin-top: 30px;
+    margin-bottom: 80px;
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 950px) {
-  .container {
-    /* width: 80%; */
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .main-content {
     text-align: center;
-    padding-bottom: 50px;
+    padding-top: 220px;
+    padding-bottom: 170px;
   }
 
-  .name {
-    font-size: 50px;
+  .content-name h1 {
+    font-size: 48px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    text-align: center;
     color: #111;
     font-weight: 800;
   }
-
-  .profession {
-    padding: 20px 0;
+  .content-profession {
+    margin-top: 10px;
+  }
+  .content-profession p {
     color: #333;
     font-size: 20px;
-    text-align: center;
-    line-height: 1.4;
-    width: 90%;
-    margin: auto;
+    line-height: 1.6;
+  }
+
+  .button {
+    margin-top: 60px;
+    margin-bottom: 70px;
   }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 600px) {
-  .container {
-    /* width: 85%; */
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .main-content {
     text-align: center;
-    padding-bottom: 20px;
+    padding-top: 160px;
+    padding-bottom: 120px;
   }
 
-  .name {
-    padding: 15px 0;
-    font-size: 25px;
+  .content-name h1 {
+    font-size: 42px;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #111;
-    font-weight: 800;
+    font-weight: 700;
+  }
+  .content-profession {
+    margin-top: 10px;
+  }
+  .content-profession p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.4;
   }
 
-  .profession {
+  .button {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .main-content {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 120px;
+  }
+
+  .content-name h1 {
+    font-size: 34px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #111;
+    font-weight: 600;
+  }
+  .content-profession {
+    margin-top: 8px;
+  }
+  .content-profession p {
     color: #333;
     font-size: 16px;
-    text-align: center;
     line-height: 1.4;
-    width: 100%;
-    margin: auto;
+  }
+
+  .button {
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+}
+
+/* ! */
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  .main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-content {
+    text-align: center;
+    /* padding-top: 160px;
+    padding-bottom: 100px; */
+  }
+
+  .content-name h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #111;
+    font-weight: 500;
+  }
+  .content-profession {
+    margin-top: 8px;
+  }
+  .content-profession p {
+    color: #333;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .button {
+    margin-top: 10px;
+    margin-bottom: 50px;
   }
 }

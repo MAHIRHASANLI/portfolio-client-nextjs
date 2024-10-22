@@ -7,6 +7,10 @@ body {
   background-color: rgb(250, 250, 250);
 }
 
+section {
+  scroll-margin-top: 40px;
+}
+
 div[data-nextjs-scroll-focus-boundary] {
   height: 100%;
 }
@@ -25,29 +29,11 @@ div[data-nextjs-scroll-focus-boundary] {
   grid-column: 1 / -1;
 }
 
-@media only screen and (min-width: 700px) {
-  #home {
-    min-height: 90vh;
-    z-index: 8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 0;
-    padding-top: 80px;
-    background-position: center;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  #home {
-    width: 100%;
-    padding-top: 80px;
-    min-height: 80vh;
-    z-index: 8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+/* 
+@media only screen and (max-width: 1500px) 
+*/
+@media only screen and (min-width: 1500px) {
+  section {
+    scroll-margin-top: 50px;
   }
 }

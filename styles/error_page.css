@@ -1,0 +1,121 @@
+@property --swing-x {
+  initial-value: 0;
+  inherits: false;
+  syntax: "<integer>";
+}
+
+@property --swing-y {
+  initial-value: 0;
+  inherits: false;
+  syntax: "<integer>";
+}
+
+.info {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.info a {
+  text-transform: uppercase;
+  text-decoration: underline;
+  background: var(--button);
+  color: var(--button-color);
+  padding: 1rem 4rem;
+  border-radius: 4rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.05rem;
+  color: white;
+  cursor: pointer;
+}
+
+.info p {
+  font-weight: 100;
+}
+
+.info h2 {
+  margin-bottom: -10px;
+  animation: swing var(--speed) infinite alternate ease-in-out;
+  font-size: clamp(6rem, 20vmin, 6rem);
+  letter-spacing: 1rem;
+  transform: translate3d(0, 0, 0vmin);
+  --x: calc(50% + (var(--swing-x) * 0.5) * 1%);
+  background: radial-gradient(var(--lit-header), var(--header) 45%) var(--x)
+    100% / 200% 200%;
+  -webkit-background-clip: text;
+  color: white;
+}
+
+.info h2:after {
+  animation: swing var(--speed) infinite alternate ease-in-out;
+  content: "404";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--shadow);
+  filter: blur(1.5vmin);
+  transform: scale(1.05) translate3d(0, 12%, -10vmin)
+    translate(
+      calc((var(--swing-x, 0) * 0.05) * 10%),
+      calc((var(--swing-y) * 0.05) * 10%)
+    );
+}
+
+.cloak {
+  animation: swing var(--speed) infinite alternate-reverse ease-in-out;
+  height: 100%;
+  width: 100%;
+  transform-origin: 50% 30%;
+  transform: rotate(calc(var(--swing-x) * -0.25deg));
+  background: radial-gradient(40% 40% at 50% 42%, transparent, black 35%);
+}
+
+.cloak__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.cloak__container {
+  height: 250vmax;
+  width: 250vmax;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info {
+  text-align: center;
+  line-height: 1.5;
+  max-width: clamp(16rem, 90vmin, 25rem);
+}
+
+.info h3 {
+  font-size: 24px;
+  margin: 1rem 0;
+  color: var(--color);
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+}
+
+@keyframes swing {
+  0% {
+    --swing-x: -100;
+    --swing-y: -100;
+  }
+  50% {
+    --swing-y: 0;
+  }
+  100% {
+    --swing-y: -100;
+    --swing-x: 100;
+  }
+}

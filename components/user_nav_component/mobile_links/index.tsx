@@ -14,10 +14,10 @@ const MobileHeader: React.FC = () => {
         style={{ right: isOpen ? "0px" : "-100%" }}
       >
         <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/services">Services</Link>
-        <Link href="/projects">Project</Link>
-        <Link href="/contact">Contact</Link>
+        <Link href="/#about">About</Link>
+        <Link href="/#services">Services</Link>
+        <Link href="/#project">Project</Link>
+        <Link href="/#contact">Contact</Link>
       </div>
       <div className={styles.openMenu} onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <IoMdClose /> : <RxHamburgerMenu />}

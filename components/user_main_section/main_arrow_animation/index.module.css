@@ -3,10 +3,10 @@
   margin: 0 auto;
   width: 24px;
   height: 30px;
-  position: absolute;
+  /* position: absolute;
   bottom: 120px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
 }
 
 .m_scroll_arrows {

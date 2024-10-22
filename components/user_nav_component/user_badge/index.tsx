@@ -17,7 +17,8 @@ const USerBadge: React.FC = async (props: Props) => {
           width={50}
           height={50}
         />
-        Mahir&nbsp;<span style={{ color: "#7843E9" }}>Hasanli</span>
+        <span>Mahir</span>
+        <span style={{ color: "#7843E9" }}>Hasani</span>
       </div>
     </Link>
   );

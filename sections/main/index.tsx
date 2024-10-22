@@ -22,37 +22,40 @@ const getData = async (): Promise<MainDataItem[]> => {
 };
 
 const MainSection = async () => {
-  const mainData = await getData();
+  const [{ image, name, surname, profession }] = await getData();
   //   console.log(mainData);
   return (
-    mainData &&
-    mainData.map((item) => {
-      return (
-        <section
-          className="fluid"
-          id="home"
-          key={item._id}
-          style={{
-            background: `linear-gradient(to right,rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)),url(${item.image})`,
-          }}
-        >
-          <div className={styles.container}>
-            <h1 className={styles.name}>
-              <span>Hello, I'm&nbsp;{item.name}</span>&nbsp;
-              <span id="color">{item.surname}</span>
+    <section id="/" className="fluid">
+      <div
+        className={styles.main}
+        style={{
+          background: `linear-gradient(to right,rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)),url(${image})`,
+        }}
+      >
+        <div className={`${styles["main-content"]} container`}>
+          <div className={styles["content-name"]}>
+            <h1>
+              Hello, I'm&nbsp;{name}&nbsp;{surname}
             </h1>
-            <p className={styles.profession}>{item.profession}</p>
+          </div>
+          <div className={styles["content-profession"]}>
+            <p>{profession}</p>
+          </div>
+
+          <div className={styles.button}>
             <Link href="#contact">
               <Button>Contact me</Button>
             </Link>
+          </div>
 
-            {/*! Animasiyali ARROW ->*/}
+          {/*! Animasiyali ARROW ->*/}
+          <div>
             <AnimeBtn />
           </div>
-          <SocialIcons />
-        </section>
-      );
-    })
+        </div>
+      </div>
+      {/* <SocialIcons /> */}
+    </section>
   );
 };
 

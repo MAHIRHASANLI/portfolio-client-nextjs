@@ -18,7 +18,7 @@ interface SocialType {
   instagram: string;
 }
 
-const getData = async (): Promise<SocialType[]> => {
+export const getSocialData = async (): Promise<SocialType[]> => {
   const res = await fetch(
     "https://myportfolio-server-d8f7.onrender.com/mycontact"
   );
@@ -26,56 +26,26 @@ const getData = async (): Promise<SocialType[]> => {
 };
 
 const SocialIcons: React.FC = async () => {
-  const sosialData = await getData();
-
+  const [{ email, github, instagram, facebook, linkedn }] =
+    await getSocialData();
   return (
-    <React.Fragment>
-      {sosialData &&
-        sosialData.map((item) => (
-          <div key={item._id} className={style.home_hero_social}>
-            <Link
-              href={`mailto:${item.email}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Email"
-            >
-              <AiOutlineMail style={{ fontSize: "30px" }} />
-            </Link>
-            <Link
-              href={item.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              title="GitHub"
-            >
-              <VscGithubAlt style={{ fontSize: "30px" }} />
-            </Link>
-            <Link
-              href={item.linkedn}
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Linkedn"
-            >
-              <CiLinkedin style={{ fontSize: "30px" }} />
-            </Link>
-            <Link
-              href={item.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Facebook"
-            >
-              <CiFacebook style={{ fontSize: "30px" }} />
-            </Link>
-            <Link
-              href={item.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Instagram"
-            >
-              <CiInstagram style={{ fontSize: "30px" }} />
-            </Link>
-          </div>
-        ))}
-    </React.Fragment>
+    <div className={style.home_hero_social}>
+      <Link href={`mailto:${email}`} target="_blank">
+        <AiOutlineMail style={{ fontSize: "30px" }} />
+      </Link>
+      <Link href={github} target="_blank">
+        <VscGithubAlt style={{ fontSize: "30px" }} />
+      </Link>
+      <Link href={linkedn} target="_blank">
+        <CiLinkedin style={{ fontSize: "30px" }} />
+      </Link>
+      <Link href={facebook} target="_blank">
+        <CiFacebook style={{ fontSize: "30px" }} />
+      </Link>
+      <Link href={instagram} target="_blank">
+        <CiInstagram style={{ fontSize: "30px" }} />
+      </Link>
+    </div>
   );
 };
 

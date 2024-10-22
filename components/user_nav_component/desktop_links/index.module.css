@@ -1,4 +1,23 @@
-@media screen and (min-width: 850px) {
+@media only screen and (min-width: 1500px) {
+  .navLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navLink .links {
+    margin: 0px 15px;
+    display: inline-block;
+    font-size: 16px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 850px) and (max-width: 1500px) {
   .navLink {
     display: flex;
     justify-content: center;
@@ -8,7 +27,7 @@
   .navLink .links {
     margin: 0px 10px;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     color: #333;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -22,4 +41,8 @@
   .navLink {
     display: none;
   }
+}
+
+.active {
+  color: red !important;
 }

@@ -1,19 +1,21 @@
 @media screen and (min-width: 850px) {
   .header {
     width: 100%;
-    height: 90px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 999;
     box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
     background-color: white;
   }
 
   .header .navHeaders {
-    width: 85%;
     height: 100%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,11 +32,7 @@
     height: 50px;
     border-radius: 50%;
     margin-right: 15px;
-    -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-    display: block;
   }
 
   .navHeaders .hero-fullName,
@@ -79,6 +77,8 @@
     justify-content: center;
     align-items: center;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 999;
     box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
   }
@@ -111,10 +111,7 @@
     height: 35px;
     border-radius: 50%;
     margin-right: 10px;
-    -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
     display: block;
   }
 
@@ -169,5 +166,14 @@
   }
   .navMobile a:hover {
     color: #7843e9;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .header {
+    height: 100px;
+  }
+  .header .navHeaders {
+    width: 82%;
   }
 }

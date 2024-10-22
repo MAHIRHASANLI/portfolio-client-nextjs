@@ -1,4 +1,31 @@
-@media screen and (min-width: 850px) {
+@media only screen and (min-width: 1500px) {
+  .hero-fullName {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-fullName img {
+    background: #7843e9;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 25px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    display: block;
+  }
+
+  .hero-fullName span {
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 22px !important;
+  }
+}
+@media only screen and (min-width: 850px) and (max-width: 1500px) {
   .hero-fullName {
     display: flex;
     align-items: center;
@@ -17,13 +44,12 @@
     display: block;
   }
 
-  .hero-fullName,
   .hero-fullName span {
     color: #333;
-    font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
+    font-size: 19px !important;
   }
 }
 

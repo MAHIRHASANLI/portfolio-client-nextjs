@@ -1,0 +1,85 @@
+@media only screen and (min-width: 950px) {
+  .footer {
+    margin-top: 30px;
+    width: 100%;
+    background: #000;
+    color: #fff;
+  }
+
+  .top-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .bottom-footer {
+    padding: 4rem 0;
+    border-top: 1px solid #444;
+    color: #eee;
+    font-size: 13px;
+    text-align: center;
+    box-sizing: inherit;
+  }
+
+  .bottom-footer a {
+    text-decoration: underline;
+    font-weight: 700;
+    margin-left: 2px;
+    color: inherit;
+    transition: 0.3s linear;
+  }
+
+  .bottom-footer a:hover {
+    color: #7843e9;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 950px) {
+  .footer {
+    margin-top: 20px;
+    width: 100%;
+    background: #000;
+    color: #fff;
+  }
+
+  .top-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+
+  .bottom-footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-top: 1px solid #444;
+    color: #eee;
+    font-size: 13px;
+    text-align: center;
+    box-sizing: inherit;
+  }
+
+  .bottom-footer a {
+    text-decoration: underline;
+    font-weight: 700;
+    margin-left: 2px;
+    color: inherit;
+    transition: 0.3s linear;
+  }
+
+  .bottom-footer a:hover {
+    color: #7843e9;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .top-footer {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .bottom-footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
