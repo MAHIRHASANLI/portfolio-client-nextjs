@@ -1,11 +1,11 @@
 @media only screen and (min-width: 1500px) {
-  .navLink {
+  .nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .navLink .links {
+  .nav-links a {
     margin: 0px 15px;
     display: inline-block;
     font-size: 16px;
@@ -16,15 +16,19 @@
     transition: color 0.3s;
     cursor: pointer;
   }
+
+  .nav-links a:hover {
+    color: #7843e9;
+  }
 }
 @media only screen and (min-width: 850px) and (max-width: 1500px) {
-  .navLink {
+  .nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .navLink .links {
+  .nav-links a {
     margin: 0px 10px;
     display: inline-block;
     font-size: 14px;
@@ -35,14 +39,14 @@
     transition: color 0.3s;
     cursor: pointer;
   }
-}
 
-@media screen and (max-width: 850px) {
-  .navLink {
-    display: none;
+  .nav-links a:hover {
+    color: #7843e9;
   }
 }
 
-.active {
-  color: red !important;
+@media screen and (max-width: 850px) {
+  .nav-links {
+    display: none;
+  }
 }

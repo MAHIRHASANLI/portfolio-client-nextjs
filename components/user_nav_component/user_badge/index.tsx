@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import styles from "./index.module.css";
 import Image from "next/image";
-import { getDataAbout } from "@/sections/about";
+import { getDataAbout } from "@/api/get_requests";
 type Props = {};
 
 const USerBadge: React.FC = async (props: Props) => {

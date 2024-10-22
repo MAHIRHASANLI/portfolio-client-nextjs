@@ -6,7 +6,10 @@ type Props = {
   profession: string;
 };
 
-const ProfileSummaryComponent: React.FC<Props> = ({ name, profession }) => {
+const ProfileSummaryComponent: React.FC<Props> = ({
+  name = "",
+  profession = "",
+}) => {
   return (
     <div className={styles["profile-summary"]}>
       <SectionTitle>{name}</SectionTitle>

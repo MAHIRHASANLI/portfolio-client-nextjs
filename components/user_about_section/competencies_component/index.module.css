@@ -6,15 +6,20 @@
     border: none;
     background: transparent;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     margin-right: 50px;
     color: #333;
+    transition: all 0.2s ease-out;
+  }
+  .competencies button:hover {
+    color: #7843e9;
   }
 
   .scilss-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 45px;
   }
 
   .scilss-item {
@@ -66,11 +71,15 @@
     font-weight: 600;
     margin-right: 30px;
     color: #333;
+    transition: all 0.2s ease-out;
   }
-
+  .competencies button:hover {
+    color: #7843e9;
+  }
   .scilss-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 35px;
   }
 
   .scilss-item {
@@ -116,6 +125,7 @@
   .scilss-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin-top: 25px;
   }
 
   .competencies > div:first-child {
@@ -132,7 +142,10 @@
     font-size: 14px;
     font-weight: 600;
     margin-right: 1px;
-    color: #333;
+    transition: all 0.2s ease-out;
+  }
+  .competencies button:hover {
+    color: #7843e9;
   }
 
   .scilss-item {
@@ -183,5 +196,6 @@
   .scilss-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    margin-top: 20px;
   }
 }

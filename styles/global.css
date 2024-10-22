@@ -8,7 +8,7 @@ body {
 }
 
 section {
-  scroll-margin-top: 40px;
+  scroll-margin-top: 45px;
 }
 
 div[data-nextjs-scroll-focus-boundary] {
@@ -18,7 +18,6 @@ div[data-nextjs-scroll-focus-boundary] {
 .container {
   display: grid;
   grid-template-columns: 1fr min(1440px, 85%) 1fr;
-  /* grid-template-rows: 96px auto 72px; */
 }
 
 .container > * {

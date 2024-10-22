@@ -1,25 +1,27 @@
 "use client";
 import Button from "@/components/buttons/button";
-import { FormData, validation } from "../form_validation";
+import { validation } from "../form_validation";
 import styles from "./index.module.css";
 import { FormikHelpers, useFormik } from "formik";
-type Props = {};
+import { TypeContactForm } from "@/types";
+import { postContactForm } from "@/api/post_request";
 
-const postDataMessage = async (data: FormData) => {
-  const res = await fetch(`${process.env.BASE_URL}/message`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  });
-  if (!res.ok) {
-    throw new Error(`Error: ${res.status} - ${res.statusText}`);
-  }
-};
+// type Props = {};
+// const postDataMessage = async (data:Props) => {
+//   const res = await fetch(`${process.env.BASE_URL}/message`, {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify(data),
+//   });
+//   if (!res.ok) {
+//     throw new Error(`Error: ${res.status} - ${res.statusText}`);
+//   }
+// };
 
-const ContactForm = (props: Props) => {
-  const formik = useFormik<FormData>({
+const ContactForm = () => {
+  const formik = useFormik<TypeContactForm>({
     initialValues: {
       name: "",
       surname: "",
@@ -27,14 +29,14 @@ const ContactForm = (props: Props) => {
       message: "",
     },
     validationSchema: validation,
-    onSubmit: async (values: FormData, actions: FormikHelpers<FormData>) => {
+    onSubmit: async (values, actions: FormikHelpers<TypeContactForm>) => {
       const trimObj = {
         name: values.name.trim(),
         surname: values.surname.trim(),
         email: values.email.trim(),
         message: values.message.trim(),
       };
-      await postDataMessage(trimObj);
+      await postContactForm(trimObj);
       setTimeout(() => {
         actions.resetForm();
       }, 2000);

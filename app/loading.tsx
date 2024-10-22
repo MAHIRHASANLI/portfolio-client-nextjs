@@ -1,10 +1,8 @@
-import LoadingIndigator from "@/components/loading";
+import LoadingComponent from "@/components/loading";
 import React from "react";
 
-type Props = {};
-
-const LoadingPage = (props: Props) => {
-  return <LoadingIndigator />;
+const LoadingPage: React.FC = () => {
+  return <LoadingComponent />;
 };
 
 export default LoadingPage;

@@ -4,15 +4,15 @@ import Button from "@/components/buttons/button";
 import { AiOutlineMail } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 import Link from "next/link";
-type Props = {};
+import { getDataContact } from "@/api/get_requests";
 
-const getDataContactInformation = async () => {
-  const res = await fetch(`${process.env.BASE_URL}/mycontact`);
-  return res.json();
-};
+// const getDataContactInformation = async () => {
+//   const res = await fetch(`${process.env.BASE_URL}/mycontact`);
+//   return res.json();
+// };
 
-const ContactInformation = async (props: Props) => {
-  const [{ email, phone, mydata }] = await getDataContactInformation();
+const ContactInformation = async () => {
+  const [{ email, phone, mydata }] = await getDataContact();
 
   return (
     <div className={styles["contact-inform"]}>

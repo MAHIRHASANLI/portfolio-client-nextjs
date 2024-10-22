@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import { Montserrat, Poppins } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "../styles/reset.css";
 import "../styles/global.css";
-import Footer from "@/sections/footer";
 
 export const metadata: Metadata = {
   title: "Mahir :: Web Developer",
   description:
     "I am a software engineer, developing web applications. Feel free to get in touch with me by mailing hasanlimahir1@gmail.com",
   keywords:
-    "React js, html, Mern stack, Front end, Next js, javascript, Portfolio, Mahir Hasanli, Mahir, Hasanli, mahir, hasanli, mahirhasanli, Mahir.dev, mahirhasanli.vercel.app",
+    "html, javascript,typescript, react,react js, next, next js, node,node js, tailwind, css,developer, Mern stack, Frontend,  Portfolio, Mahir Hasanli, Mahir, Hasanli, mahir, hasanli, mahirhasanli, Mahir.dev, mahirhasanli.vercel.app",
   authors: [{ name: "Mahir Hasanli" }],
   robots: "index, follow",
   openGraph: {
@@ -18,14 +17,14 @@ export const metadata: Metadata = {
       "I am a software engineer, developing web applications. Feel free to get in touch with me by mailing hasanlimahir1@gmail.com",
     url: "https://mahirhasanli.vercel.app",
     type: "website",
-    images: [
-      {
-        url: "https://mahirhasanli.vercel.app/your-image.jpg", // burada layihənizin şəkil URL-nu əlavə edin
-        width: 800,
-        height: 600,
-        alt: "Mahir Hasanli - Web Developer",
-      },
-    ],
+    // images: [
+    //   {
+    //     url: "https://mahirhasanli.vercel.app/your-image.jpg",
+    //     width: 800,
+    //     height: 600,
+    //     alt: "Mahir Hasanli - Web Developer",
+    //   },
+    // ],
   },
   twitter: {
     title: "Mahir :: Web Developer",

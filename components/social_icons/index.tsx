@@ -6,28 +6,18 @@ import style from "./index.module.css";
 import Link from "next/link";
 import { VscGithubAlt } from "react-icons/vsc";
 import { AiOutlineMail } from "react-icons/ai";
+import { getDataContact } from "@/api/get_requests";
 
-interface SocialType {
-  _id: string;
-  email: string;
-  phone: string;
-  facebook: string;
-  linkedn: string;
-  github: string;
-  mydata: string;
-  instagram: string;
-}
-
-export const getSocialData = async (): Promise<SocialType[]> => {
-  const res = await fetch(
-    "https://myportfolio-server-d8f7.onrender.com/mycontact"
-  );
-  return res.json();
-};
+// export const getSocialData = async (): Promise<SocialType[]> => {
+//   const res = await fetch(
+//     "https://myportfolio-server-d8f7.onrender.com/mycontact"
+//   );
+//   return res.json();
+// };
 
 const SocialIcons: React.FC = async () => {
   const [{ email, github, instagram, facebook, linkedn }] =
-    await getSocialData();
+    await getDataContact();
   return (
     <div className={style.home_hero_social}>
       <Link href={`mailto:${email}`} target="_blank">

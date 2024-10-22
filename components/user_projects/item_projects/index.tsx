@@ -2,18 +2,12 @@ import React from "react";
 import styles from "./index.module.css";
 import Link from "next/link";
 import Image from "next/image";
-interface ProjectProps {
-  _id: string;
-  name: string;
-  title: string;
-  image: string;
-  webkitURL: string;
-}
+import { getDataProjects } from "@/api/get_requests";
 
-const getDataProjects = async (): Promise<ProjectProps[]> => {
-  const res = await fetch(`${process.env.BASE_URL}/project`);
-  return res.json();
-};
+// const getDataProjects = async (): Promise<ProjectProps[]> => {
+//   const res = await fetch(`${process.env.BASE_URL}/project`);
+//   return res.json();
+// };
 
 const ItemProject: React.FC = async () => {
   const projectData = await getDataProjects();

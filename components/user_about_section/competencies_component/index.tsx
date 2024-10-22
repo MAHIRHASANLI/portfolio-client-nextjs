@@ -2,39 +2,31 @@
 import React, { useEffect, useState } from "react";
 import style from "./index.module.css";
 import Image from "next/image";
+import { CompetenciesType } from "@/types";
+import { getDataSkils } from "@/api/get_requests";
 
-interface CompetenciesType {
-  about: string;
-  category: string;
-  image: string;
-  name: string;
-  _id: string;
-}
-
-const getData = async (category: string): Promise<CompetenciesType[]> => {
-  const res = await fetch(
-    `${process.env.BASE_URL}/skills?category=${category}`
-  );
-  if (!res.ok) throw new Error("Failed to fetch data");
-  return res.json();
-};
+// const getData = async (category: string): Promise<CompetenciesType[]> => {
+//   const res = await fetch(
+//     `${process.env.BASE_URL}/skills?category=${category}`
+//   );
+//   if (!res.ok) throw new Error("Failed to fetch data");
+//   return res.json();
+// };
 
 const CompetenciesComponent: React.FC = () => {
   const [competenciesData, setCompetenciesData] = useState<CompetenciesType[]>(
     []
   );
   useEffect(() => {
-    getData("skills").then((res) => setCompetenciesData(res));
+    getDataSkils().then((res) => setCompetenciesData(res));
   }, []);
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>): void => {
     const value = e.currentTarget.value;
-    getData(value).then((res) => setCompetenciesData(res));
-    console.log(competenciesData.map(({ image }) => console.log(image)));
+    getDataSkils(value).then((res) => setCompetenciesData(res));
   };
 
   useEffect(() => {
-    const activeBtn = document.getElementById("active_btn");
     const btnsElement = document.querySelectorAll<HTMLButtonElement>(".btn");
 
     btnsElement.forEach((btn) => {
@@ -45,16 +37,14 @@ const CompetenciesComponent: React.FC = () => {
     });
 
     return () => {
-      // Event listener-ləri təmizləmək
       btnsElement.forEach((btn) => btn.removeEventListener("click", () => {}));
     };
   }, []);
   return (
     <div className={style.competencies}>
       {/*//*  buttons */}
-      <div style={{ paddingBottom: "20px" }}>
+      <div>
         <button
-          id="active_btn"
           onClick={(e) => handleClick(e)}
           className="btn button"
           value="skills"

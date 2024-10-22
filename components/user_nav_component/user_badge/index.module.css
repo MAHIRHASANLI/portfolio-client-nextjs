@@ -10,10 +10,7 @@
     height: 60px;
     border-radius: 50%;
     margin-right: 25px;
-    -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
     display: block;
   }
 
@@ -37,10 +34,7 @@
     height: 50px;
     border-radius: 50%;
     margin-right: 15px;
-    -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
     display: block;
   }
 
@@ -65,10 +59,7 @@
     height: 35px;
     border-radius: 50%;
     margin-right: 10px;
-    -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
     display: block;
   }
 

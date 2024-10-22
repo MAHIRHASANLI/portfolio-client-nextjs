@@ -2,13 +2,11 @@ import React from "react";
 import styles from "./index.module.css";
 import Link from "next/link";
 import { CiFacebook, CiInstagram, CiLinkedin } from "react-icons/ci";
-import { AiOutlineMail } from "react-icons/ai";
 import { VscGithubAlt } from "react-icons/vsc";
-import { getSocialData } from "@/components/social_icons";
-type Props = {};
+import { getDataContact } from "@/api/get_requests";
 
-const FooterContent = async (props: Props) => {
-  const [{ github, instagram, facebook, linkedn }] = await getSocialData();
+const FooterContent: React.FC = async () => {
+  const [{ github, instagram, facebook, linkedn }] = await getDataContact();
 
   return (
     <div className={styles["wrapper-content"]}>

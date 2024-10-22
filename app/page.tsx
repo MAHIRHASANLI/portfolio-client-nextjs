@@ -1,8 +1,8 @@
 import React from "react";
 import UserContainer from "@/container/user";
-type Props = {
-  searchParams: { [key: string]: string | boolean };
-};
+// type PropsPage = {
+//   searchParams: { [key: string]: string | boolean };
+// };
 
 const delay = (ms: number): Promise<void> => {
   return new Promise((resolve) => {
@@ -10,11 +10,11 @@ const delay = (ms: number): Promise<void> => {
   });
 };
 
-const HomePage = async ({ searchParams }: Props) => {
-  if (searchParams.error === "true") {
-    throw new Error("Error!!!!!");
-  }
-  await delay(1000);
+const HomePage: React.FC = async () => {
+  // if (searchParams.error === "true") {
+  //   throw new Error("Error!!!!!");
+  // }
+  await delay(500);
   return <UserContainer />;
 };
 

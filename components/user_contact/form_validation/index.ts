@@ -1,13 +1,7 @@
+import { TypeContactForm } from "@/types";
 import * as Yup from "yup";
 
-export interface FormData {
-  name: string;
-  surname: string;
-  email: string;
-  message: string;
-}
-
-export const validation: Yup.Schema<FormData> = Yup.object().shape({
+export const validation: Yup.Schema<TypeContactForm> = Yup.object().shape({
   name: Yup.string()
     .min(5, "Too Short!")
     .max(20, "Too Long!")

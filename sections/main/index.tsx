@@ -4,26 +4,10 @@ import styles from "./index.module.css";
 import Button from "@/components/buttons/button";
 import SocialIcons from "@/components/social_icons";
 import AnimeBtn from "@/components/user_main_section/main_arrow_animation";
-// Gələn məlumatın strukturunu müəyyən etmək üçün interfeys
-interface MainDataItem {
-  _id: string;
-  name: string;
-  surname: string;
-  profession: string;
-  image: string;
-}
-
-const getData = async (): Promise<MainDataItem[]> => {
-  const res = await fetch(`${process.env.BASE_URL}/home`);
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-  return res.json();
-};
+import { getDataMain } from "@/api/get_requests";
 
 const MainSection = async () => {
-  const [{ image, name, surname, profession }] = await getData();
-  //   console.log(mainData);
+  const [{ image, name, surname, profession }] = await getDataMain();
   return (
     <section id="/" className="fluid">
       <div
@@ -54,7 +38,7 @@ const MainSection = async () => {
           </div>
         </div>
       </div>
-      {/* <SocialIcons /> */}
+      <SocialIcons />
     </section>
   );
 };
