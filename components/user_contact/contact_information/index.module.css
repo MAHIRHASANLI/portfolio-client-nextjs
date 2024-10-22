@@ -97,6 +97,10 @@
     align-items: center;
   }
 
+  .social:first-child {
+    margin-bottom: 10px;
+  }
+
   .social svg {
     cursor: pointer;
     padding: 5px;
