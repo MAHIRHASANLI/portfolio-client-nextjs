@@ -1,4 +1,5 @@
 import { TypeContactForm } from "@/types";
+import { BASE_URL } from "./base_url";
 
 //TODO GET - sorgusu
 export const getFetchData = async (
@@ -6,9 +7,7 @@ export const getFetchData = async (
   category: string = ""
 ) => {
   try {
-    const response = await fetch(
-      `${process.env.BASE_URL}/${pathname}?${category}`
-    );
+    const response = await fetch(`${BASE_URL}/${pathname}?${category}`);
     if (!response.ok) {
       throw new Error(`Error: ${response.status} - ${response.statusText}`);
     }
@@ -24,7 +23,7 @@ export const postFetchData = async (
   body: TypeContactForm
 ) => {
   try {
-    const response = await fetch(`${process.env.BASE_URL}/${pathname}`, {
+    const response = await fetch(`${BASE_URL}/${pathname}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
