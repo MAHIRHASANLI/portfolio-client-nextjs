@@ -1,1 +1,1 @@
-export const BASE_URL = "https://myportfolio-server-d8f7.onrender.com";
+export const BASE_URL = "https://my-website-nodejs-api.vercel.app";

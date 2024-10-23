@@ -1,7 +1,7 @@
 import React from "react";
 import SectionTitle from "@/components/user_section_title";
 import styles from "./index.module.css";
-import ItemProject from "@/components/user_projects/item_projects";
+import ItemProject from "@/components/user_projects_section/item_projects";
 type Props = {};
 
 const ProjectsSection: React.FC = (props: Props) => {

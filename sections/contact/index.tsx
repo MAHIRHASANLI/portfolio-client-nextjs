@@ -1,8 +1,8 @@
 import React from "react";
 import SectionTitle from "@/components/user_section_title";
 import styles from "./index.module.css";
-import ContactForm from "@/components/user_contact/contact_form";
-import ContactInformation from "@/components/user_contact/contact_information";
+import ContactForm from "@/components/user_contact_section/contact_form";
+import ContactInformation from "@/components/user_contact_section/contact_information";
 
 const ContactSection = () => {
   return (

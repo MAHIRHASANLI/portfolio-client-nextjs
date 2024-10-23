@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
-import ItemServicesComponent from "@/components/user_services_component/item_services_component";
+import ItemServicesComponent from "@/components/user_services_section/item_services_component";
 import SectionTitle from "@/components/user_section_title";
 import { getDataServices } from "@/api/get_requests";
 

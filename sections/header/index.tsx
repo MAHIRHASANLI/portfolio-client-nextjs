@@ -1,7 +1,7 @@
 import React from "react";
-import MobileLinks_and_MenuButton from "@/components/user_nav_component/mobile_links";
-import DesctopLinks from "@/components/user_nav_component/desktop_links";
-import USerBadge from "@/components/user_nav_component/user_badge";
+import MobileLinks_and_MenuButton from "@/components/user_header/mobile_links";
+import DesctopLinks from "@/components/user_header/desktop_links";
+import USerBadge from "@/components/user_header/user_badge";
 import styles from "./index.module.css";
 
 const Header: React.FC = () => {
