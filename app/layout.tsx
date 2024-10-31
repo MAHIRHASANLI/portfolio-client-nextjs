@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   verification: {
-    google: "dFXv5OH_VewFRYTwG5pq0bC3AFyGCDZcvqRJCFpcBW4",
+    google: "google-site-verification=dFXv5OH_VewFRYTwG5pq0bC3AFyGCDZcvqRJCFpcBW4",
   },
 };
 
