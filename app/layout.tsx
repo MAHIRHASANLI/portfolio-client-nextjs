@@ -17,23 +17,16 @@ export const metadata: Metadata = {
       "I am a software engineer, developing web applications. Feel free to get in touch with me by mailing hasanlimahir1@gmail.com",
     url: "https://mahirhasani.vercel.app",
     type: "website",
-    // images: [
-    //   {
-    //     url: "https://mahirhasanli.vercel.app/your-image.jpg",
-    //     width: 800,
-    //     height: 600,
-    //     alt: "Mahir Hasanli - Web Developer",
-    //   },
-    // ],
   },
   twitter: {
     title: "Mahir :: Web Developer",
     description:
       "I am a software engineer, developing web applications. Feel free to get in touch with me by mailing hasanlimahir1@gmail.com",
-    card: "summary_large_image", // Twitter kartı üçün geniş şəkil
+    card: "summary_large_image",
   },
-  applicationName: "https://mahirhasani.vercel.app", // Tətbiq adı
-  googleSiteVerification: "google-site-verification=dFXv5OH_VewFRYTwG5pq0bC3AFyGCDZcvqRJCFpcBW4"
+  verification: {
+    google: "dFXv5OH_VewFRYTwG5pq0bC3AFyGCDZcvqRJCFpcBW4",
+  },
 };
 
 const poppins = Montserrat({
