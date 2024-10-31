@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Mahir :: Web Developer",
     description:
       "I am a software engineer, developing web applications. Feel free to get in touch with me by mailing hasanlimahir1@gmail.com",
-    url: "https://mahirhasanli.vercel.app",
+    url: "https://mahirhasani.vercel.app",
     type: "website",
     // images: [
     //   {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "I am a software engineer, developing web applications. Feel free to get in touch with me by mailing hasanlimahir1@gmail.com",
     card: "summary_large_image", // Twitter kartı üçün geniş şəkil
   },
-  applicationName: "Mahir.dev", // Tətbiq adı
+  applicationName: "https://mahirhasani.vercel.app", // Tətbiq adı
 };
 
 const poppins = Montserrat({
