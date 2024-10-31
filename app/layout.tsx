@@ -33,6 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image", // Twitter kartı üçün geniş şəkil
   },
   applicationName: "https://mahirhasani.vercel.app", // Tətbiq adı
+  googleSiteVerification: "google-site-verification=dFXv5OH_VewFRYTwG5pq0bC3AFyGCDZcvqRJCFpcBW4"
 };
 
 const poppins = Montserrat({
