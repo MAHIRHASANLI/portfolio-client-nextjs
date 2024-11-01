@@ -23,7 +23,7 @@ const ItemProject: React.FC = async () => {
             {/* <div className={styles["img-project"]}> */}
             <Image
               src={image}
-              alt="item.name"
+              alt={name}
               fill
               sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
