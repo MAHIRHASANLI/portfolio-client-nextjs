@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "I am a software engineer, developing web applications. Feel free to get in touch with me by mailing hasanlimahir1@gmail.com",
   keywords:
-    "html, javascript,typescript, react,react js, next, next js, node,node js, tailwind, css,developer, Mern stack, Frontend,  Portfolio, Mahir Hasanli, Mahir, Hasanli, mahir, hasanli, mahirhasanli, Mahir.dev, mahirhasanli.vercel.app",
+    "html, javascript,typescript, react, react js, next, next js, node,node js, tailwind, css,developer, Mern stack, Frontend,  Portfolio, Mahir Hasanli,Mahir Hasani, Mahir Həsənli, Mahir, Hasanli, mahir, hasanli, mahirhasanli, mahirhasani, Mahir.dev, mahirhasani.vercel.app",
   authors: [{ name: "Mahir Hasanli" }],
   robots: "index, follow",
   openGraph: {
@@ -25,7 +25,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   verification: {
-    google: "google-site-verification=dFXv5OH_VewFRYTwG5pq0bC3AFyGCDZcvqRJCFpcBW4",
+    google:
+      "google-site-verification=dFXv5OH_VewFRYTwG5pq0bC3AFyGCDZcvqRJCFpcBW4",
   },
 };
 
