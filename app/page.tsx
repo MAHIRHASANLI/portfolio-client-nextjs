@@ -22,11 +22,7 @@ export const metadata:Metadata ={
     description:
       "I am a software engineer, developing web applications. Feel free to get in touch with me by mailing hasanlimahir1@gmail.com",
     card: "summary_large_image",
-  },
-  verification: {
-    google:
-      "google-site-verification=dFXv5OH_VewFRYTwG5pq0bC3AFyGCDZcvqRJCFpcBW4",
-  },
+  }
 };
 
 // type PropsPage = {
