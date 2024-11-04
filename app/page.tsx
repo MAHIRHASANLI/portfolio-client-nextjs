@@ -2,6 +2,7 @@ import React from "react";
 import UserContainer from "@/container/user";
 import type { Metadata } from "next";
 
+export const metadata:Metadata ={
   title: "Mahir :: Web Developer",
   description:
     "I am a software engineer, developing web applications. Feel free to get in touch with me by mailing hasanlimahir1@gmail.com",
