@@ -23,7 +23,6 @@ export const metadata: Metadata = {
       "I am a software engineer, developing web applications. Feel free to get in touch with me by mailing hasanlimahir1@gmail.com",
     card: "summary_large_image",
   },
-  googleSiteVerification: "JjjmUXA5Jyg2UBXqQQeXfvLL-izveuahLyH-NfFmVzc",
 };
 
 // type PropsPage = {
