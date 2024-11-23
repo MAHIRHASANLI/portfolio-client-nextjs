@@ -13,7 +13,7 @@
     font-weight: 800;
   }
   .content-profession {
-    margin-top: 20px;
+    margin-top: 35px;
   }
   .content-profession p {
     color: #333;
@@ -23,7 +23,7 @@
 
   .button {
     margin-top: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 110px;
   }
 }
 
@@ -46,13 +46,13 @@
   }
   .content-profession p {
     color: #333;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.6;
   }
 
   .button {
-    margin-top: 60px;
-    margin-bottom: 70px;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 }
 
@@ -71,7 +71,7 @@
     font-weight: 700;
   }
   .content-profession {
-    margin-top: 10px;
+    margin-top: 15px;
   }
   .content-profession p {
     color: #333;
@@ -80,8 +80,8 @@
   }
 
   .button {
-    margin-top: 40px;
-    margin-bottom: 60px;
+    margin-top: 50px;
+    margin-bottom: 70px;
   }
 }
 
@@ -101,7 +101,7 @@
     line-height: 1.5;
   }
   .content-profession {
-    margin-top: 8px;
+    margin-top: 12px;
   }
   .content-profession p {
     color: #333;
@@ -110,8 +110,8 @@
   }
 
   .button {
-    margin-top: 22px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 50px;
   }
 }
 
@@ -124,6 +124,7 @@
     align-items: center;
   }
   .main-content {
+    padding-top: 50px;
     text-align: center;
   }
 
@@ -136,7 +137,7 @@
     line-height: 1.5;
   }
   .content-profession {
-    margin-top: 20px;
+    margin-top: 25px;
   }
   .content-profession p {
     color: #333;
@@ -145,7 +146,7 @@
   }
 
   .button {
-    margin-top: 20px;
-    margin-bottom: 80px;
+    margin-top: 60px;
+    margin-bottom: 70px;
   }
 }

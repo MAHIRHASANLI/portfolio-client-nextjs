@@ -9,11 +9,6 @@ const AnimeBtn: React.FC = (props: Props) => {
       <div className={styles.mouse}>
         <div className={styles.wheel}></div>
       </div>
-      <div className={styles.mouse_item}>
-        <span className={`${styles.m_scroll_arrows} ${styles.unu}`}></span>
-        <span className={`${styles.m_scroll_arrows} ${styles.doi}`}></span>
-        <span className={`${styles.m_scroll_arrows} ${styles.trei}`}></span>
-      </div>
     </div>
   );
 };
