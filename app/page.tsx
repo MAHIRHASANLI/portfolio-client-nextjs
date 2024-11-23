@@ -3,7 +3,7 @@ import UserContainer from "@/container/user";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mahir :: Web Developer",
+  title: "Mahir Hasani :: Web Developer",
   description:
     "I am a software engineer, developing web applications. Feel free to get in touch with me by mailing hasanlimahir1@gmail.com",
   keywords:
@@ -11,14 +11,14 @@ export const metadata: Metadata = {
   authors: [{ name: "Mahir Hasanli" }],
   robots: "index, follow",
   openGraph: {
-    title: "Mahir :: Web Developer",
+    title: "Mahir Hasani :: Web Developer",
     description:
       "I am a software engineer, developing web applications. Feel free to get in touch with me by mailing hasanlimahir1@gmail.com",
     url: "https://mahirhasani.vercel.app",
     type: "website",
   },
   twitter: {
-    title: "Mahir :: Web Developer",
+    title: "Mahir Hasani :: Web Developer",
     description:
       "I am a software engineer, developing web applications. Feel free to get in touch with me by mailing hasanlimahir1@gmail.com",
     card: "summary_large_image",
