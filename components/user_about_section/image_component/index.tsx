@@ -5,15 +5,14 @@ import { MdOutlineTouchApp } from "react-icons/md";
 
 type Props = {
   imgURL: string;
-  name: string;
 };
 
-const ImageComponent: React.FC<Props> = ({ imgURL = "", name = "" }) => {
+const ImageComponent: React.FC<Props> = ({ imgURL = "" }) => {
   return (
     <div className={styles.lightbox_img}>
       <Image
         src={imgURL}
-        alt={name}
+        alt="Mahir Hasani"
         title="Mahir Hasanli"
         fill
         sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"

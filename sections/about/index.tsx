@@ -18,7 +18,7 @@ const AboutSection: React.FC = async () => {
       <div className={styles.scilss}>
         <div className={styles["grid-container"]}>
           <div className={styles["grid-item-left"]}>
-            <ImageComponent imgURL={image} name={name} />
+            <ImageComponent imgURL={image} />
           </div>
           <div className={styles["grid-item-right"]}>
             <ProfileSummaryComponent name={name} profession={profession} />

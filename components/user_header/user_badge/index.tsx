@@ -3,17 +3,16 @@ import React from "react";
 import styles from "./index.module.css";
 import Image from "next/image";
 import { getDataAbout } from "@/api/get_requests";
-type Props = {};
 
-const USerBadge: React.FC = async (props: Props) => {
-  const [{ name, image }] = await getDataAbout();
+const USerBadge: React.FC = async () => {
+  const [{ image }] = await getDataAbout();
   return (
     <Link href="https://mahirhasanli.vercel.app/">
       <div className={styles["hero-fullName"]} key="">
         <Image
           className={styles.img}
           src={image}
-          alt={name}
+          alt="Mahir Hasani"
           width={50}
           height={50}
         />
