@@ -12,7 +12,7 @@ const ImageComponent: React.FC<Props> = ({ imgURL = "" }) => {
     <div className={styles.lightbox_img}>
       <Image
         src={imgURL}
-        alt="Mahir Hasani"
+        alt="Mahir Hasanli"
         title="Mahir Hasanli"
         fill
         sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
