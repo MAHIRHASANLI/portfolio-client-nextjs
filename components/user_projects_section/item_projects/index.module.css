@@ -30,6 +30,22 @@
     grid-column: 2 / 4;
   }
 
+  .item-8 {
+    grid-column: 1 / 2;
+  }
+
+  .item-9 {
+    grid-column: 2 / 4;
+  }
+
+  .item-10 {
+    grid-column: 1 / 2;
+  }
+
+  .item-11 {
+    grid-column: 2 / 4;
+  }
+
   .project-item {
     background-color: #f0ede9;
     border-radius: 12px;
@@ -135,6 +151,22 @@
     grid-column: 1 / 2;
   }
   .item-7 {
+    grid-column: 2 / 4;
+  }
+
+  .item-8 {
+    grid-column: 1 / 2;
+  }
+
+  .item-9 {
+    grid-column: 2 / 4;
+  }
+
+  .item-10 {
+    grid-column: 1 / 2;
+  }
+
+  .item-11 {
     grid-column: 2 / 4;
   }
 
