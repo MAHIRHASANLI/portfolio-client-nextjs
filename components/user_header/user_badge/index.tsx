@@ -12,12 +12,12 @@ const USerBadge: React.FC = async () => {
         <Image
           className={styles.img}
           src={image}
-          alt="Mahir Hasanli"
+          alt="Mahir Hasani"
           width={50}
           height={50}
         />
         <span>Mahir</span>
-        <span style={{ color: "#7843E9" }}>Hasanli</span>
+        <span style={{ color: "#7843E9" }}>Hasani</span>
       </div>
     </Link>
   );
