@@ -3,22 +3,22 @@ import UserContainer from "@/container/user";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mahir Hasanli :: Web Developer",
+  title: "Mahir Hasani :: Web Developer",
   description:
     "I am a software engineer, developing web applications. Feel free to get in touch with me by mailing hasanlimahir1@gmail.com",
   keywords:
     "html, javascript,typescript, react, react js, next, next js, node,node js, tailwind, css,developer, Mern stack, Frontend,  Portfolio, Mahir Hasanli,Mahir Hasani, Mahir Həsənli, Mahir, Hasanli, mahir, hasanli, mahirhasanli, mahirhasani, Mahir.dev, mahirhasani.vercel.app",
-  authors: [{ name: "Mahir Hasanli" }],
+  authors: [{ name: "Mahir Hasani" }],
   robots: "index, follow",
   openGraph: {
-    title: "Mahir Hasanli :: Web Developer",
+    title: "Mahir Hasani :: Web Developer",
     description:
       "I am a software engineer, developing web applications. Feel free to get in touch with me by mailing hasanlimahir1@gmail.com",
     url: "https://mahirhasani.vercel.app",
     type: "website",
   },
   twitter: {
-    title: "Mahir Hasanli :: Web Developer",
+    title: "Mahir Hasani :: Web Developer",
     description:
       "I am a software engineer, developing web applications. Feel free to get in touch with me by mailing hasanlimahir1@gmail.com",
     card: "summary_large_image",
