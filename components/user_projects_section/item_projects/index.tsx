@@ -24,7 +24,7 @@ const ItemProject: React.FC = async () => {
             <Image
               src={image}
               alt={name}
-              fill
+              fill={true}
               sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             {/* </div> */}
