@@ -6,3 +6,4 @@
 5. Swiper Slider
 
 Açıqlama: Web sayt Portfolio məzmunludur və mənimlə bağlı məlumatları ətraflı izah edir. Həmçinin layihələrimlə bağlı yenilikləri görə bilərsiniz.
+Link: https://mahirhasani.vercel.app
