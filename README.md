@@ -5,5 +5,6 @@
 4. React İcons
 5. Swiper Slider
 
-Açıqlama: Web sayt Portfolio məzmunludur və mənimlə bağlı məlumatları ətraflı izah edir. Həmçinin layihələrimlə bağlı yenilikləri görə bilərsiniz.
+Açıqlama: Web sayt Portfolio məzmunludur və mənimlə bağlı məlumatları ətraflı izah edir. Həmçinin layihələrimlə bağlı yenilikləri görə bilərsiniz.<br/>
 Link: https://mahirhasani.vercel.app
+<div><img src="./images/website-images.png" alt="Mahir Hasani"/></div>
