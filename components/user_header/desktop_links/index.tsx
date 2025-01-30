@@ -5,11 +5,11 @@ import styles from "./index.module.css";
 const DesktopHeader: React.FC = () => {
   return (
     <div className={styles["nav-links"]}>
-      <Link href="#">Main</Link>
-      <Link href="#about">About</Link>
-      <Link href="#services">Services</Link>
-      <Link href="#project">Project</Link>
-      <Link href="#contact">Contact</Link>
+      <Link href="#">Əsas</Link>
+      <Link href="#about">Haqqında</Link>
+      <Link href="#services">Xidmətlər</Link>
+      <Link href="#project">Layihələr</Link>
+      <Link href="#contact">Əlaqə</Link>
     </div>
   );
 };

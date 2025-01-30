@@ -14,11 +14,11 @@ const MobileHeader: React.FC = () => {
         className={styles.navMobile}
         style={{ width: isOpen ? "100%" : "0px" }}
       >
-        <Link href="#">Home</Link>
-        <Link href="#about">About</Link>
-        <Link href="#services">Services</Link>
-        <Link href="#project">Project</Link>
-        <Link href="#contact">Contact</Link>
+        <Link href="#">Əsas</Link>
+        <Link href="#about">Haqqında</Link>
+        <Link href="#services">Xidmətlər</Link>
+        <Link href="#project">Layihələr</Link>
+        <Link href="#contact">Əlaqə</Link>
       </div>
       <div className={styles.openMenu} onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <IoMdClose /> : <RxHamburgerMenu />}
