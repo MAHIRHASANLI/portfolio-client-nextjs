@@ -19,12 +19,12 @@ const ItemServicesComponent: React.FC<Props> = ({ services = "" }) => {
       </h3>
       <div>
         <span className={styles["service-description"]}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro odit
-          doloribus saepe blanditiis aperiam amet.
+          Müasir texnologiyalar və ən yaxşı təcrübələrdən istifadə edərək,
+          sürətli, funksional və istifadəçi dostu veb həllər təqdim edirik.
         </span>
       </div>
       <div className={styles["service-link"]}>
-        <span>Learn more &nbsp;</span>
+        <span>Ətraflı öyrən&nbsp;</span>
         <FaArrowRight />
       </div>
     </div>

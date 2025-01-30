@@ -5,20 +5,36 @@
     padding-bottom: 210px;
   }
 
-  .content-name h1 {
-    font-size: 60px;
+  .content-name p {
+    line-height: 24px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #333;
+    line-height: 27.5px;
+    font-weight: 500;
+  }
+
+  .content-front h1 {
+    font-size: 128px;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #111;
     font-weight: 800;
+    line-height: 80%;
   }
   .content-profession {
     margin-top: 35px;
+    margin-bottom: 110px;
   }
   .content-profession p {
     color: #333;
-    font-size: 24px;
-    line-height: 1.6;
+    font-size: 20px;
+    line-height: 1.7;
+    line-height: 1.375;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
   }
 
   .button {
@@ -34,20 +50,37 @@
     padding-bottom: 170px;
   }
 
-  .content-name h1 {
-    font-size: 48px;
+  .content-name p {
+    line-height: 22px;
+    margin-bottom: 15px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    font-size: 22px;
+    color: #333;
+    line-height: 27.5px;
+    font-weight: 400;
+  }
+
+  .content-front h1 {
+    font-size: 124px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
     color: #111;
     font-weight: 800;
+    line-height: 80%;
+    letter-spacing: -6px;
   }
   .content-profession {
-    margin-top: 10px;
+    margin-top: 25px;
+    margin-bottom: 80px;
   }
   .content-profession p {
     color: #333;
-    font-size: 22px;
+    font-size: 17px;
     line-height: 1.6;
+    line-height: 1.375;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -0.8px;
   }
 
   .button {
@@ -62,21 +95,34 @@
     padding-top: 160px;
     padding-bottom: 120px;
   }
-
-  .content-name h1 {
-    font-size: 42px;
+  .content-name p {
+    line-height: 22px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #333;
+    line-height: 27.5px;
+    font-weight: 400;
+  }
+  .content-front h1 {
+    font-size: 100px;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #111;
     font-weight: 700;
   }
   .content-profession {
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 100px;
   }
   .content-profession p {
     color: #333;
-    font-size: 18px;
-    line-height: 1.4;
+    font-size: 14px;
+    line-height: 1.6;
+    line-height: 1.375;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -0.8px;
   }
 
   .button {
@@ -91,22 +137,34 @@
     padding-top: 200px;
     padding-bottom: 120px;
   }
-
-  .content-name h1 {
-    font-size: 34px;
+  .content-name p {
+    line-height: 22px;
+    margin-bottom: 15px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    font-size: 22px;
+    color: #333;
+    line-height: 27.5px;
+    font-weight: 400;
+  }
+  .content-front h1 {
+    font-size: 95px;
+    text-transform: uppercase;
     color: #111;
     font-weight: 600;
-    line-height: 1.5;
+    line-height: 0.8;
   }
   .content-profession {
-    margin-top: 12px;
+    margin-top: 25px;
+    margin-bottom: 100px;
   }
   .content-profession p {
     color: #333;
-    font-size: 16px;
-    line-height: 1.4;
+    font-size: 12px;
+    line-height: 1.6;
+    line-height: 1.375;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1.05px;
   }
 
   .button {
@@ -127,22 +185,36 @@
     padding-top: 50px;
     text-align: center;
   }
-
-  .content-name h1 {
-    font-size: 24px;
+  .content-name p {
+    line-height: 22px;
+    margin-bottom: 20px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    font-size: 18px;
+    color: #333;
+    line-height: 27.5px;
+    font-weight: 400;
+  }
+  .content-front h1 {
+    font-size: 56px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     color: #111;
-    font-weight: 600;
-    line-height: 1.5;
+    font-weight: 700;
+    line-height: 0.8;
+    text-align: center;
   }
   .content-profession {
     margin-top: 25px;
+    margin-bottom: 100px;
   }
   .content-profession p {
     color: #333;
     font-size: 12px;
-    line-height: 1.2;
+    line-height: 1.6;
+    line-height: 1.375;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
   }
 
   .button {

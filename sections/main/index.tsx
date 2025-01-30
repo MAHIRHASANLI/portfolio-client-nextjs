@@ -18,19 +18,26 @@ const MainSection = async () => {
       >
         <div className={`${styles["main-content"]} container`}>
           <div className={styles["content-name"]}>
+            <p>
+              {name}&nbsp;{surname}
+            </p>
+          </div>
+          <div className={styles["content-front"]}>
             <h1>
-              Hello, I'm&nbsp;{name}&nbsp;{surname}
+              Frontend
+              <br />
+              Engineer
             </h1>
           </div>
           <div className={styles["content-profession"]}>
             <p>{profession}</p>
           </div>
 
-          <div className={styles.button}>
+          {/* <div className={styles.button}>
             <Link href="#contact">
-              <Button>Contact me</Button>
+              <Button>Mənə yazın</Button>
             </Link>
-          </div>
+          </div> */}
 
           {/*! Animasiyali ARROW ->*/}
           <div>

@@ -15,7 +15,7 @@ const ServicesSection: React.FC = async () => {
   return (
     <section id="services">
       <div className={styles.services}>
-        <SectionTitle>My Services</SectionTitle>
+        <SectionTitle>Xidmətlərim</SectionTitle>
         <div className={styles.wrapper}>
           {servicesData &&
             servicesData.map(({ _id, services }) => (

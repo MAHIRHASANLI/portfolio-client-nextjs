@@ -17,14 +17,17 @@ const FooterContent: React.FC = async () => {
         </h4>
         <div>
           <p className={styles.profession}>
-            I am a software engineer, developing web applications. Feel free to
-            contact me.
+            Mən,{" "}
+            <strong style={{ fontWeight: "bold" }}>
+              Proqram Təminatı Mühəndisiyəm
+            </strong>
+            , veb tətbiqlər hazırlayıram. Mənimlə əlaqə saxlaya bilərsiniz.
           </p>
         </div>
       </div>
       <div className={styles["item-right"]}>
         <div>
-          <h4>SOCIAL</h4>
+          <h4>Mənİ İzləyİn</h4>
         </div>
         <div className={styles["social"]}>
           <Link href={github} target="_blank">

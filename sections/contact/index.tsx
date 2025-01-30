@@ -11,7 +11,7 @@ const ContactSection = () => {
         <div>
           {/* ? SECTION TITLE */}
           <div>
-            <SectionTitle>Contact Me</SectionTitle>
+            <SectionTitle>Mənimlə əlaqə saxlayın</SectionTitle>
           </div>
           {/* ?contact information*/}
           <div>

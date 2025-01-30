@@ -10,7 +10,7 @@ const ProjectsSection: React.FC = (props: Props) => {
       <div className={styles.projects}>
         {/* ? SECTION TITLE */}
         <div>
-          <SectionTitle>Our Projects</SectionTitle>
+          <SectionTitle>Layihələrim</SectionTitle>
         </div>
         {/* ? PROJECT'LER*/}
         <div className={styles["projects-content"]}>

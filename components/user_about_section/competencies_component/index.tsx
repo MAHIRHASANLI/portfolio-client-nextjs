@@ -49,21 +49,21 @@ const CompetenciesComponent: React.FC = () => {
           className="btn button"
           value="skills"
         >
-          Skills
+          Texniki Bacarıqlar
         </button>
         <button
           onClick={(e) => handleClick(e)}
           className="btn"
           value="experience"
         >
-          Experience
+          İş Təcrübəsi
         </button>
         <button
           onClick={(e) => handleClick(e)}
           className="btn"
           value="education"
         >
-          Education
+          Təhsil
         </button>
       </div>
       {/* //* Skills Experience Education */}

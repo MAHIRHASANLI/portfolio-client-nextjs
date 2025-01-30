@@ -11,8 +11,9 @@ const Footer: React.FC = () => {
           <FooterContent />
         </div>
         <div className={styles["bottom-footer"]}>
-          <span> © Copyright {new Date().getFullYear()}. Made by</span>
-          <Link href="/">Mahir Hasani</Link>
+          <span> © 2025. Müəllif hüquqları qorunur.</span>
+          <Link href="/">Mahir Hasani</Link>{" "}
+          <span>tərəfindən hazırlanmışdır.</span>
         </div>
       </div>
     </div>

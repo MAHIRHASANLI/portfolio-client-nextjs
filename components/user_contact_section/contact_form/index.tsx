@@ -50,7 +50,7 @@ const ContactForm = () => {
           value={formik.values.name}
           name="name"
           type="text"
-          placeholder={formik.errors.name ? `${formik.errors.name}` : "Name"}
+          placeholder={formik.errors.name ? `${formik.errors.name}` : "Ad"}
         />
       </div>
       <div className={styles.comment}>
@@ -60,7 +60,7 @@ const ContactForm = () => {
           name="surname"
           type="text"
           placeholder={
-            formik.errors.surname ? `${formik.errors.surname}` : "Surname"
+            formik.errors.surname ? `${formik.errors.surname}` : "Soy ad"
           }
         />
       </div>
@@ -81,12 +81,12 @@ const ContactForm = () => {
           placeholder={
             formik.errors.message
               ? `${formik.errors.message}`
-              : "Enter a message"
+              : "Mesajını daxil et"
           }
         ></textarea>
       </div>
       <div className={styles["cv-btn"]}>
-        <Button>Submit</Button>
+        <Button>Göndər</Button>
       </div>
     </form>
   );
