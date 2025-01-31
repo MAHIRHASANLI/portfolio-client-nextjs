@@ -152,6 +152,7 @@
     color: #111;
     font-weight: 600;
     line-height: 0.8;
+    letter-spacing: -5px;
   }
   .content-profession {
     margin-top: 25px;
@@ -182,7 +183,7 @@
     align-items: center;
   }
   .main-content {
-    padding-top: 50px;
+    padding-top: 100px;
     text-align: center;
   }
   .content-name p {
@@ -202,6 +203,7 @@
     font-weight: 700;
     line-height: 0.8;
     text-align: center;
+    letter-spacing: -5px;
   }
   .content-profession {
     margin-top: 25px;
